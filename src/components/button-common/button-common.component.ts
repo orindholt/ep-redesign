@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'button-orange',
-  templateUrl: './button-o.component.html'
+  selector: 'button-common',
+  templateUrl: './button-common.component.html'
 })
 export class ButtonOrangeComponent {
   @Input() text!: string;

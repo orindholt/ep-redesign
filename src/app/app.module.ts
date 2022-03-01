@@ -11,11 +11,13 @@ import { FooterComponent } from 'src/templates/footer/footer.component';
 import { MenuComponent } from 'src/components/nav-menu/menu.component';
 import { NavInComponent } from 'src/components/nav-loggedIn/nav-in.component';
 import { PersonSvgComponent } from 'src/templates/svg/person-icon';
-import { ButtonOrangeComponent } from 'src/components/button-orange/button-o.component';
+import { ButtonOrangeComponent } from 'src/components/button-common/button-common.component';
 import { RegisterComponent } from 'src/components/register-rewad/register.component';
 import { OffersComponent } from 'src/templates/point-offers/offers.component';
 import { TournamentsComponent } from 'src/templates/tournaments/tournaments.component';
 import { GameSlideComponent } from 'src/components/game-slide/game-slide.component';
+import { WelcomeOffersComponent } from 'src/templates/welcome-offers/welcome-offers.component';
+import { WelcomeOfferComponent } from 'src/components/welcome-offer/welcome-offer.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -34,6 +36,8 @@ import { GameSlideComponent } from 'src/components/game-slide/game-slide.compone
     OffersComponent,
     TournamentsComponent,
     GameSlideComponent,
+    WelcomeOffersComponent,
+    WelcomeOfferComponent,
   ],
   bootstrap: [AppComponent],
 })
