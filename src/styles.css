@@ -31,6 +31,10 @@
   @apply bg-gradient-to-bl from-orange to-[#FFD45B];
 }
 
+.bg-gradient-orange-alt {
+  @apply bg-gradient-to-tr from-orange to-[#FFD45B];
+}
+
 .text-gradient-orange {
   @apply bg-gradient-to-br from-[#FF9515] via-[#FF502E] to-[#FF4E2F];
   background-clip: text;
@@ -44,6 +48,17 @@
 
 .text-gradient-pink {
   @apply bg-gradient-to-r from-[#FF0180] to-[#FF5858];
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-green {
+  @apply bg-gradient-to-t from-[#259C63] to-[#0FD792];
+}
+
+.text-gradient-green {
+  @apply bg-gradient-to-t from-[#259C63] to-[#0FD792];
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -1,0 +1,22 @@
+<div
+  class="rounded-xl p-[2px]"
+  [ngClass]="
+    offerObj.golden === true ? 'bg-gradient-orange-alt' : 'bg-gradient-green'
+  "
+>
+  <img [src]="offerObj.imgSrc" [alt]="offerObj.altText" />
+  <div class="p-2">
+    <h4
+      class="text-yellow font-bold text-3xl"
+      [ngStyle]="{ color: offerObj.golden === true ? 'black' : '' }"
+    >
+      €{{ offerObj.euroClaim }}
+    </h4>
+    <p class="text-white text-[8px] mb-1">100% up to €120 + 120 Free Spins</p>
+    <button-common
+      [text]="'Claim'"
+      [anchor]="'#'"
+      [width]="'100%'"
+    ></button-common>
+  </div>
+</div>
