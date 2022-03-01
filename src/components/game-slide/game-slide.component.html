@@ -1,0 +1,16 @@
+<div
+  class="bg-gradient-pink rounded-xl text-white w-[18.125rem] h-[18.125rem] flex flex-col"
+>
+  <div class="grid">
+    <img [src]="gameObj.imgSrc" [alt]="gameObj.altText" class="grid-area" />
+    <p class="text-sm grid-area self-end p-3">
+      <span class="mr-4">{{ gameObj.days }} days</span>{{ gameObj.time }}
+    </p>
+  </div>
+  <div class="flex items-center justify-between px-3 my-auto">
+    <h3 class="text-xl font-bold">€{{ gameObj.cost.euro }}</h3>
+    <div class="h-9 w-[1px] bg-white"></div>
+    <p class="text-base">{{ gameObj.cost.ep }} EP</p>
+    <button-orange [text]="'Play'" [anchor]="'#'"></button-orange>
+  </div>
+</div>

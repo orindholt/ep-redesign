@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 export class ButtonOrangeComponent {
   @Input() text!: string;
   @Input() anchor!: string;
+  @Input() width = "6.25rem";
 }

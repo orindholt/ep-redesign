@@ -15,6 +15,7 @@ import { ButtonOrangeComponent } from 'src/components/button-orange/button-o.com
 import { RegisterComponent } from 'src/components/register-rewad/register.component';
 import { OffersComponent } from 'src/templates/point-offers/offers.component';
 import { TournamentsComponent } from 'src/templates/tournaments/tournaments.component';
+import { GameSlideComponent } from 'src/components/game-slide/game-slide.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -32,6 +33,7 @@ import { TournamentsComponent } from 'src/templates/tournaments/tournaments.comp
     RegisterComponent,
     OffersComponent,
     TournamentsComponent,
+    GameSlideComponent,
   ],
   bootstrap: [AppComponent],
 })

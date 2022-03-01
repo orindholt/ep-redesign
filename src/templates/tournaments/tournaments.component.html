@@ -1,3 +1,15 @@
-<section>
-  <h2>Current Tournaments</h2>
-</section>
+<div class="flex flex-col">
+  <h2 class="text-gradient-pink font-bold text-4xl mb-5">
+    Current<br />Tournaments
+  </h2>
+  <div class="flex overflow-hidden gap-4">
+    <game-slide *ngFor="let game of games" [gameObj]="game"></game-slide>
+  </div>
+  <div class="mx-auto py-6">
+    <button-orange
+      [text]="'Go to all our tournaments'"
+      [anchor]="'#'"
+      [width]="'15.625rem'"
+    ></button-orange>
+  </div>
+</div>
