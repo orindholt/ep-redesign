@@ -1,0 +1,20 @@
+<div class="bg-gradient-blue p-3 rounded-xl grid">
+  <img src="./assets/game.png" alt="Current Biggest Game" class="grid-area" />
+  <div class="text-white grid-area flex flex-col justify-end px-4 py-5">
+    <div class="flex mb-auto justify-end items-center gap-1">
+      <person-svg [fillColor]="'#12EE9A'"></person-svg>
+      <p>374</p>
+      <p class="live-dot relative">Live</p>
+    </div>
+    <div class="flex justify-between items-end pb-2">
+      <p class="text-base font-medium leading-4">
+        {{ currentMonth }}'s biggest<br />tournament
+      </p>
+      <p class="text-lg">01:29:51</p>
+    </div>
+    <div class="flex justify-between">
+      <h2 class="text-4xl font-bold">Win €5.000</h2>
+      <button-orange [text]="'Join'" [anchor]="'#'"></button-orange>
+    </div>
+  </div>
+</div>

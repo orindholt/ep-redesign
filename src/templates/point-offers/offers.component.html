@@ -1,0 +1,13 @@
+<div class="flex justify-between text-white my-4">
+  <a
+    *ngFor="let offer of offers"
+    [href]="offer.anchor"
+    class="flex flex-col items-center text-center bg-black rounded-lg h-[115px] py-2 border-x-4 border-x-black"
+  >
+    <img [src]="offer.iconSrc" [alt]="offer.caption" class="w-1/3 h-10 mb-3" />
+    <p class="text-[13px] font-medium leading-3">{{ offer.caption }}:</p>
+    <p class="font-extralight mt-auto" [ngStyle]="{ color: offer.color }">
+      + {{ offer.point }}
+    </p>
+  </a>
+</div>

@@ -1,0 +1,111 @@
+@import url("https://use.typekit.net/ljh7sbj.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notification-bell::after {
+  @apply absolute w-4 h-4 flex justify-center items-center content-["3"] text-lightBlue bg-red rounded-full top-[-5px] right-[-5px] text-xs;
+}
+
+.live-dot::after {
+  @apply absolute w-1 h-1 flex justify-center items-center content-[""] text-lightBlue bg-red rounded-full top-0 right-[-2px] text-xs;
+}
+
+.text-gradient-base {
+  @apply bg-gradient-to-l from-cyan to-purple;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-cyan {
+  @apply bg-gradient-to-r from-cyan to-purple;
+}
+
+.bg-gradient-blue {
+  @apply bg-gradient-to-r from-[#0060E9] to-[#80BAD0];
+}
+
+.bg-gradient-orange {
+  @apply bg-gradient-to-bl from-orange to-[#FFD45B];
+}
+
+.text-gradient-orange {
+  @apply bg-gradient-to-br from-[#FF9515] via-[#FF502E] to-[#FF4E2F];
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-pink {
+  @apply bg-gradient-to-t from-[#FF0180] to-[#FF5858];
+}
+
+.grid-area {
+  grid-area: 1/1/1/1;
+}
+
+.triangle-toggled {
+  border-top-width: 0px;
+  border-bottom-width: 8px;
+}
+
+body {
+  font-family: "sofia", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input,
+button,
+textarea {
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}

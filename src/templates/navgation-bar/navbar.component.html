@@ -1,0 +1,22 @@
+<nav
+  class="flex justify-between px-4 h-16 bg-lightBlue items-center shadow-md z-100"
+>
+  <img src="./assets/header.svg" alt="header" class="w-32" />
+  <div class="flex">
+    <nav-loggedIn *ngIf="loggedIn"></nav-loggedIn>
+    <button
+      *ngIf="!loggedIn"
+      (click)="loggedIn = true"
+      class="p-2 w-10 h-10 rounded bg-black mr-4"
+    >
+      <img src="./assets/login.svg" alt="Login Icon" />
+    </button>
+    <button class="mr-4">
+      <img src="./assets/search.svg" alt="search icon" />
+    </button>
+    <button (click)="isShown = !isShown" ngmodel="isShown">
+      <img src="./assets/burger-menu.svg" alt="menu icon" />
+    </button>
+    <nav-menu *ngIf="isShown" [menuList]="menuList"></nav-menu>
+  </div>
+</nav>
