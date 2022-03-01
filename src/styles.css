@@ -39,7 +39,14 @@
 }
 
 .bg-gradient-pink {
-  @apply bg-gradient-to-t from-[#FF0180] to-[#FF5858];
+  @apply bg-gradient-to-r from-[#FF0180] to-[#FF5858];
+}
+
+.text-gradient-pink {
+  @apply bg-gradient-to-r from-[#FF0180] to-[#FF5858];
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .grid-area {

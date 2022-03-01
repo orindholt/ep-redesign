@@ -14,6 +14,7 @@ import { PersonSvgComponent } from 'src/templates/svg/person-icon';
 import { ButtonOrangeComponent } from 'src/components/button-orange/button-o.component';
 import { RegisterComponent } from 'src/components/register-rewad/register.component';
 import { OffersComponent } from 'src/templates/point-offers/offers.component';
+import { TournamentsComponent } from 'src/templates/tournaments/tournaments.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -30,6 +31,7 @@ import { OffersComponent } from 'src/templates/point-offers/offers.component';
     ButtonOrangeComponent,
     RegisterComponent,
     OffersComponent,
+    TournamentsComponent,
   ],
   bootstrap: [AppComponent],
 })
