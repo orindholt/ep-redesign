@@ -11,4 +11,10 @@ export class NavbarComponent {
   isShown = false;
   menuList = menuList;
   loggedIn = false;
+  toggleMenu(){
+    this.isShown = !this.isShown;
+    this.isShown === false && menuList.forEach(element => {
+      if(element.dropdown !== undefined) element.dropdown.shown = false;
+    });
+  }
 }

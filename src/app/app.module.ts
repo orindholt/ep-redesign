@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from '../templates/navgation-bar/navbar.component';
+import { NavbarComponent } from '../templates/nav-bar/navbar.component';
 import { RewardsComponent } from '../components/rewards/rewards.component';
 import { WinComponent } from '../components/win-example/win.component';
 import { GameComponent } from 'src/components/game-biggest/game.component';
@@ -18,6 +18,7 @@ import { TournamentsComponent } from 'src/templates/tournaments/tournaments.comp
 import { GameSlideComponent } from 'src/components/game-slide/game-slide.component';
 import { WelcomeOffersComponent } from 'src/templates/welcome-offers/welcome-offers.component';
 import { WelcomeOfferComponent } from 'src/components/welcome-offer/welcome-offer.component';
+import { MenuItemComponent } from 'src/components/nav-menu/menu-item.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -29,6 +30,7 @@ import { WelcomeOfferComponent } from 'src/components/welcome-offer/welcome-offe
     GameComponent,
     FooterComponent,
     MenuComponent,
+    MenuItemComponent,
     NavInComponent,
     PersonSvgComponent,
     ButtonOrangeComponent,

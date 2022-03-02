@@ -14,9 +14,10 @@
     <button class="mr-4">
       <img src="./assets/search.svg" alt="search icon" />
     </button>
-    <button (click)="isShown = !isShown" ngmodel="isShown">
+    <button (click)="toggleMenu()" ngmodel="isShown">
       <img src="./assets/burger-menu.svg" alt="menu icon" />
     </button>
+    <!-- Burger Menu Button -->
     <nav-menu *ngIf="isShown" [menuList]="menuList"></nav-menu>
   </div>
 </nav>
