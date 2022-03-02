@@ -1,0 +1,25 @@
+<li class="border-b-2 border-gray py-3 flex items-start gap-2">
+	<!-- List item -->
+	<div
+		*ngIf="item.dropdown"
+		class="border-x-4 border-t-8 border-y-black border-x-transparent mt-2"
+		[ngClass]="item.dropdown.shown && 'triangle-toggled'"
+	></div>
+	<!-- Dropdown Triangle -->
+	<div>
+		<a [href]="item.anchor" (click)="toggleDropdown()">{{ item.text }}</a>
+		<!-- Dropdown Icon with Click Event -->
+		<ul
+			*ngIf="item.dropdown && item.dropdown.shown"
+			class="flex flex-col gap-3 mt-5"
+		>
+			<!-- Dropdown -->
+			<li *ngFor="let dropdownItem of item.dropdown.list">
+				<!-- Dropdown Item -->
+				<a [href]="dropdownItem.anchor">
+					{{ dropdownItem.text }}
+				</a>
+			</li>
+		</ul>
+	</div>
+</li>
