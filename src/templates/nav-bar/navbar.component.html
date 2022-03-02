@@ -1,5 +1,5 @@
 <nav
-  class="flex justify-between px-4 h-16 bg-lightBlue items-center shadow-md z-100"
+  class="flex justify-between px-4 h-16 bg-lightBlue items-center shadow-md z-10 fixed w-full top-0"
 >
   <img src="./assets/header.svg" alt="header" class="w-32" />
   <div class="flex">
@@ -18,6 +18,9 @@
       <img src="./assets/burger-menu.svg" alt="menu icon" />
     </button>
     <!-- Burger Menu Button -->
-    <nav-menu *ngIf="isShown" [menuList]="menuList"></nav-menu>
+    <nav-menu
+      [ngStyle]="isShown === true ? { display: 'block' } : { display: 'none' }"
+      [menuList]="menuList"
+    ></nav-menu>
   </div>
 </nav>

@@ -27,6 +27,13 @@
   @apply bg-gradient-to-r from-[#0060E9] to-[#80BAD0];
 }
 
+.text-gradient-blue-alt {
+  @apply bg-gradient-to-tr from-[#0B119B] to-[#172DD6];
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bg-gradient-orange {
   @apply bg-gradient-to-bl from-orange to-[#FFD45B];
 }
@@ -62,6 +69,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.footer-icons img {
+  @apply max-w-[10.938rem] max-h-14 px-2;
 }
 
 .grid-area {

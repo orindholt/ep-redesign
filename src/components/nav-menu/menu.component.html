@@ -1,18 +1,29 @@
 <nav
-	class="fixed top-16 right-0 h-[100vh] bg-white w-5/6 z-10 flex shadow-md overflow-y-scroll"
+  class="fixed top-16 right-0 h-[100vh] bg-white w-5/6 z-10 flex shadow-md overflow-y-scroll"
 >
-	<div class="h-full w-1 bg-black ml-2"></div>
-	<div class="w-full">
-		<div class="flex justify-between p-3 border-b-2 border-gray">
-			<a href="#" class="bg-[#ffc400] text-white p-2 rounded-[3px] font-bold"
-				>Log ind her.</a
-			>
-			<button>
-				<img src="./assets/denmark.svg" alt="danish flag" class="w-6" />
-			</button>
-		</div>
-		<ul class="px-5 font-bold" *ngFor="let menuItem of menuList">
-			<menu-item [item]="menuItem"></menu-item>
-		</ul>
-	</div>
+  <div class="h-full w-1 bg-black ml-2"></div>
+  <div class="w-full relative">
+    <div class="flex justify-between p-3">
+      <a href="#" class="bg-[#ffc400] text-white p-2 rounded-[3px] font-bold"
+        >Log ind her.</a
+      >
+      <button (click)="openDetector()">
+        <img [src]="iconSrc" alt="Region Selector" class="w-6" />
+      </button>
+    </div>
+    <geo-popup
+      *ngIf="detectorBool === true && detectorInteracted === false"
+      [regionBool]="regionSelector"
+      (showDropdown)="interactDetector($event)"
+    ></geo-popup>
+    <region-menu
+      *ngIf="regionSelector === true"
+      [regions]="regions"
+      (regionEvent)="iconSrc = $event"
+    ></region-menu>
+    <hr class="border border-gray" />
+    <ul class="px-5 font-bold" *ngFor="let menuItem of menuList">
+      <menu-item [item]="menuItem"></menu-item>
+    </ul>
+  </div>
 </nav>

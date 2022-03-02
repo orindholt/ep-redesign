@@ -10,7 +10,7 @@ import { GameComponent } from 'src/components/game-biggest/game.component';
 import { FooterComponent } from 'src/templates/footer/footer.component';
 import { MenuComponent } from 'src/components/nav-menu/menu.component';
 import { NavInComponent } from 'src/components/nav-loggedIn/nav-in.component';
-import { PersonSvgComponent } from 'src/templates/svg/person-icon';
+import { PersonSvgComponent } from 'src/templates/dynamic-svg/person-icon';
 import { ButtonOrangeComponent } from 'src/components/button-common/button-common.component';
 import { RegisterComponent } from 'src/components/register-rewad/register.component';
 import { OffersComponent } from 'src/templates/point-offers/offers.component';
@@ -19,6 +19,9 @@ import { GameSlideComponent } from 'src/components/game-slide/game-slide.compone
 import { WelcomeOffersComponent } from 'src/templates/welcome-offers/welcome-offers.component';
 import { WelcomeOfferComponent } from 'src/components/welcome-offer/welcome-offer.component';
 import { MenuItemComponent } from 'src/components/nav-menu/menu-item.component';
+import { ShopComponent } from 'src/templates/shop/shop.component';
+import { RegionMenuComponent } from 'src/components/region-menu/region-menu.component';
+import { GeoComponent } from 'src/components/geo-popup/geo.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -40,6 +43,9 @@ import { MenuItemComponent } from 'src/components/nav-menu/menu-item.component';
     GameSlideComponent,
     WelcomeOffersComponent,
     WelcomeOfferComponent,
+    ShopComponent,
+    RegionMenuComponent,
+    GeoComponent
   ],
   bootstrap: [AppComponent],
 })

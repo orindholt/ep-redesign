@@ -18,6 +18,7 @@ module.exports = {
         orange: "#FFA626",
         yellow: "#FFBC3F",
         gray: "#eeeeee",
+        darkGray: "#999999",
       },
       spacing: {
         18: "4.5rem",
@@ -25,6 +26,15 @@ module.exports = {
       boxShadow: {
         "t-md": "-1px -1px 11px 1px rgb(0 0 0 / 22%)",
       },
+    },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 },
+      },
+    },
+    animation: {
+      fadeIn: "fadeIn .5s ease-in-out forwards",
     },
   },
   plugins: [],
