@@ -8,13 +8,18 @@ import { menuList } from './menulist';
 })
 
 export class NavbarComponent {
-  isShown = false;
+  isShown: boolean = false;
   menuList = menuList;
-  loggedIn = false;
+  loggedIn: boolean = false;
+  showLogin: boolean = false;
   toggleMenu(){
     this.isShown = !this.isShown;
     this.isShown === false && menuList.forEach(element => {
       if(element.dropdown !== undefined) element.dropdown.shown = false;
     });
+  }
+  toggleLogin(event: boolean){
+    this.showLogin = event;
+    if(this.isShown === true) this.isShown = false;
   }
 }
