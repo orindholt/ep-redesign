@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login',
@@ -6,5 +7,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class LoginComponent{
   @Output() active = new EventEmitter<boolean>();
-  submitFunc(){window.location.reload()}
+  router!: Router;
 }

@@ -20,7 +20,7 @@
     <form
       action="#"
       class="text-center flex flex-col px-10 gap-y-6"
-      (submit)="submitFunc()"
+      (submit)="(false)"
     >
       <input
         type="text"
@@ -34,12 +34,13 @@
         class="p-3 rounded-sm bg-gray placeholder:text-darkGray"
         required
       />
-      <button
-        type="submit"
+      <a
+        routerLink="/loggedin"
+        (click)="active.emit(false)"
         class="bg-gradient-orange rounded-md shadow-md w-full h-9 flex justify-center items-center text-lg font-medium text-white"
       >
         Log In
-      </button>
+      </a>
       <div>
         <p class="mb-4">Or continue with social login</p>
         <div class="flex justify-center gap-x-3">
