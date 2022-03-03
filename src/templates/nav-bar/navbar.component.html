@@ -1,12 +1,12 @@
 <nav
   class="flex justify-between px-4 h-16 bg-lightBlue items-center shadow-md z-10 fixed w-full top-0"
 >
-  <img src="./assets/header.svg" alt="header" class="w-32" />
+  <a href="#"><img src="./assets/header.svg" alt="header" class="w-32" /></a>
   <div class="flex">
     <nav-loggedIn *ngIf="loggedIn"></nav-loggedIn>
     <button
       *ngIf="!loggedIn"
-      (click)="loggedIn = true"
+      (click)="toggleLogin(true)"
       class="p-2 w-10 h-10 rounded bg-black mr-4"
     >
       <img src="./assets/login.svg" alt="Login Icon" />
@@ -21,6 +21,8 @@
     <nav-menu
       [ngStyle]="isShown === true ? { display: 'block' } : { display: 'none' }"
       [menuList]="menuList"
+      (showLoginEvent)="toggleLogin($event)"
     ></nav-menu>
   </div>
+  <login *ngIf="showLogin" (active)="toggleLogin($event)"></login>
 </nav>

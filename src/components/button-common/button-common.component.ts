@@ -9,4 +9,5 @@ export class ButtonOrangeComponent {
   @Input() anchor!: string;
   @Input() width = "6.25rem";
   @Input() height = "2.25rem";
+  @Input() type = "button"
 }

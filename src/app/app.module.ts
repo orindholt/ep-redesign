@@ -22,9 +22,13 @@ import { MenuItemComponent } from 'src/components/nav-menu/menu-item.component';
 import { ShopComponent } from 'src/templates/shop/shop.component';
 import { RegionMenuComponent } from 'src/components/region-menu/region-menu.component';
 import { GeoComponent } from 'src/components/geo-popup/geo.component';
+import { LoginComponent } from '../components/login/login.component';
+import { FrontpageComponent } from '../pages/frontpage/frontpage.component';
+import { FrontpageLoggedComponent } from '../pages/frontpage-logged/frontpage-logged.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     NavbarComponent,
@@ -45,7 +49,10 @@ import { GeoComponent } from 'src/components/geo-popup/geo.component';
     WelcomeOfferComponent,
     ShopComponent,
     RegionMenuComponent,
-    GeoComponent
+    GeoComponent,
+    LoginComponent,
+    FrontpageComponent,
+    FrontpageLoggedComponent
   ],
   bootstrap: [AppComponent],
 })
