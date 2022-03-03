@@ -6,7 +6,7 @@
     <nav-loggedIn *ngIf="loggedIn"></nav-loggedIn>
     <button
       *ngIf="!loggedIn"
-      (click)="loggedIn = true"
+      (click)="toggleLogin(true)"
       class="p-2 w-10 h-10 rounded bg-black mr-4"
     >
       <img src="./assets/login.svg" alt="Login Icon" />
@@ -21,6 +21,8 @@
     <nav-menu
       [ngStyle]="isShown === true ? { display: 'block' } : { display: 'none' }"
       [menuList]="menuList"
+      (showLoginEvent)="toggleLogin($event)"
     ></nav-menu>
   </div>
+  <login *ngIf="showLogin" (active)="toggleLogin($event)"></login>
 </nav>

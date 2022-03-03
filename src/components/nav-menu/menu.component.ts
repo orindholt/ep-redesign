@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'nav-menu',
@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class MenuComponent {
   @Input() isShown: any;
   @Input() menuList: any;
+  @Output() showLoginEvent = new EventEmitter<boolean>();
   regionSelector: boolean = false;
   detectorBool: boolean = false;
   detectorInteracted: boolean = false;
@@ -63,10 +64,13 @@ export class MenuComponent {
     console.log(event)
   }
   openDetector(){
-    if(this.detectorBool === false && this.detectorInteracted === false){
-      this.detectorBool = true;
+    if(this.detectorInteracted === false){
+      this.detectorBool = !this.detectorBool;
     } else if(this.detectorInteracted === true){
       this.regionSelector = !this.regionSelector;
     }
+  }
+  showLogin(){
+    this.showLoginEvent.emit(true);
   }
 }

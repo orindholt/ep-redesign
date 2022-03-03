@@ -22,6 +22,7 @@ import { MenuItemComponent } from 'src/components/nav-menu/menu-item.component';
 import { ShopComponent } from 'src/templates/shop/shop.component';
 import { RegionMenuComponent } from 'src/components/region-menu/region-menu.component';
 import { GeoComponent } from 'src/components/geo-popup/geo.component';
+import { LoginComponent } from '../components/login/login.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -45,7 +46,8 @@ import { GeoComponent } from 'src/components/geo-popup/geo.component';
     WelcomeOfferComponent,
     ShopComponent,
     RegionMenuComponent,
-    GeoComponent
+    GeoComponent,
+    LoginComponent
   ],
   bootstrap: [AppComponent],
 })
