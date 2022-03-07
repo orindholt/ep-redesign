@@ -33,9 +33,6 @@ module.exports = {
         "100%": { opacity: 1 },
       },
     },
-    animation: {
-      fadeIn: "fadeIn .5s ease-in-out forwards",
-    },
   },
   plugins: [],
 };

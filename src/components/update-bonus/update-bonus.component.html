@@ -1,0 +1,12 @@
+<div class="flex items-center font-medium py-3 border-b border-[#BCC6D6]">
+  <div
+    class="w-[6px] h-[6px] mr-2 rounded-full"
+    [ngStyle]="{ background: altColor ? altColor : color }"
+  ></div>
+  <h3 class="max-w-[230px] text-[16px] font-medium leading-5" #captionText>
+    {{ caption }}
+  </h3>
+  <button class="ml-auto text-white h-10 w-18 rounded-md shadow-md" #button>
+    {{ typeString }}
+  </button>
+</div>

@@ -1,10 +1,24 @@
-<section
-  class="flex justify-between items-center rounded h-12 bg-black pl-2 my-3 text-white pr-18"
->
-  <img src="./assets/user-icon.svg" alt="user example" class="w-auto" />
-  <h2 class="font-bold text-base">Daniel44</h2>
-  <p>
-    Just won <span class="text-orange font-bold">{{ winAmount }} EP </span>
-    <a href="#" class="underline">here!</a>
-  </p>
-</section>
+<article class="w-full h-12 rounded-md overflow-hidden mb-3">
+  <div class="card" #card>
+    <div
+      class="flex justify-between items-center bg-black text-white p-2 pr-20 card-face"
+    >
+      <img [src]="imgSrc" [alt]="username" class="w-auto" />
+      <h2 class="font-bold text-base">{{ username }}</h2>
+      <p>
+        Just won <span class="text-orange font-bold">{{ winAmount }} EP </span>
+        <a href="#" class="underline">here!</a>
+      </p>
+    </div>
+    <div
+      class="card-face card-back flex justify-between items-center bg-black text-white p-2 pr-20"
+    >
+      <img [src]="imgSrc" [alt]="username" class="w-auto" />
+      <h2 class="font-bold text-base">{{ username }}</h2>
+      <p>
+        Just won <span class="text-orange font-bold">{{ winAmount }} EP </span>
+        <a href="#" class="underline">here!</a>
+      </p>
+    </div>
+  </div>
+</article>

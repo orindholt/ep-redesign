@@ -1,14 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'frontpage',
   templateUrl: './frontpage.component.html',
 })
-export class FrontpageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class FrontpageComponent{}

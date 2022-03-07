@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { shopList } from 'src/app/app-shop';
 
 @Component({
   selector: 'shop',
@@ -6,36 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class ShopComponent {
-  shopList = [
-    {
-      imgSrc: "./assets/shop/winnermagic.png",
-      title: "Winner's Magic",
-      cost: "30.000",
-      bonus: 5
-    },
-    {
-      imgSrc: "./assets/shop/millionpot.png",
-      title: "Millionpot",
-      cost: "30.000",
-      bonus: 5
-    },
-    {
-      imgSrc: "./assets/shop/luckythrillz.png",
-      title: "Lucky Thrillz",
-      cost: "30.000",
-      bonus: 5
-    },
-    {
-      imgSrc: "./assets/shop/jackiejackpot.png",
-      title: "Jackie Jackpot",
-      cost: "30.000",
-      bonus: 5
-    },
-    {
-      imgSrc: "./assets/shop/tradacasino.png",
-      title: "Trada Casino",
-      cost: "30.000",
-      bonus: 5
-    },
-  ]
+  @Input() shopList: any = shopList;
 }

@@ -1,14 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'frontpage-logged',
   templateUrl: './frontpage-logged.component.html',
 })
-export class FrontpageLoggedComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class FrontpageLoggedComponent {}

@@ -1,7 +1,4 @@
-<div class="flex flex-col">
-  <h2 class="text-gradient-pink font-bold text-4xl mb-5">
-    Current<br />Tournaments
-  </h2>
+<div class="flex flex-col pl-8">
   <div class="flex overflow-hidden gap-4">
     <game-slide *ngFor="let game of games" [gameObj]="game"></game-slide>
   </div>

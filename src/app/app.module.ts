@@ -26,6 +26,12 @@ import { LoginComponent } from '../components/login/login.component';
 import { FrontpageComponent } from '../pages/frontpage/frontpage.component';
 import { FrontpageLoggedComponent } from '../pages/frontpage-logged/frontpage-logged.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ExpBarComponent } from '../components/exp-bar/exp-bar.component';
+import { DailyUpdatesComponent } from '../templates/daily-updates/daily-updates.component';
+import { UpdateBonusComponent } from '../components/update-bonus/update-bonus.component';
+import { ProgressComponent } from '../components/progress/progress.component';
+import { PicksComponent } from '../templates/picks/picks.component';
+import { ShopItemComponent } from '../components/shop-item/shop-item.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -52,7 +58,13 @@ import { AppRoutingModule } from './app-routing.module';
     GeoComponent,
     LoginComponent,
     FrontpageComponent,
-    FrontpageLoggedComponent
+    FrontpageLoggedComponent,
+    ExpBarComponent,
+    DailyUpdatesComponent,
+    UpdateBonusComponent,
+    ProgressComponent,
+    PicksComponent,
+    ShopItemComponent
   ],
   bootstrap: [AppComponent],
 })

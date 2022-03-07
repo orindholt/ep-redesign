@@ -12,7 +12,7 @@
   @apply absolute w-1 h-1 flex justify-center items-center content-[""] text-lightBlue bg-red rounded-full top-0 right-[-2px] text-xs;
 }
 
-.text-gradient-base {
+.text-gradient-cyan {
   @apply bg-gradient-to-l from-cyan to-purple;
   background-clip: text;
   -webkit-background-clip: text;
@@ -21,6 +21,10 @@
 
 .bg-gradient-cyan {
   @apply bg-gradient-to-r from-cyan to-purple;
+}
+
+.bg-gradient-cyan-alt {
+  @apply bg-gradient-to-bl from-cyan to-purple;
 }
 
 .bg-gradient-blue {
@@ -83,7 +87,41 @@
   border-top-width: 0px;
   border-bottom-width: 8px;
 }
+.gift-step {
+  @apply rounded-full relative bg-gradient-cyan;
+}
 
+.gift-step::after {
+  content: url("./assets/gift.svg");
+  @apply absolute top-3 right-[-5px];
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
+.card {
+  @apply w-full h-full relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+.card-face {
+  @apply absolute w-full h-full;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  @apply bg-black;
+  transform: rotateX(180deg);
+}
+
+.updates > *:last-of-type > * {
+  border: none;
+}
+
+/* reset */
 body {
   font-family: "sofia-pro", sans-serif;
   @apply text-base;
@@ -109,6 +147,7 @@ button {
   background: none;
   cursor: pointer;
   user-select: none;
+  font-weight: inherit;
 }
 
 button,
