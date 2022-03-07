@@ -27,6 +27,9 @@ module.exports = {
         "t-md": "-1px -1px 11px 1px rgb(0 0 0 / 22%)",
       },
     },
+    animation: {
+      fadeIn: "fadeIn .5s forwards",
+    },
     keyframes: {
       fadeIn: {
         "0%": { opacity: 0 },

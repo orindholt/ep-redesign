@@ -17,7 +17,6 @@ export class MenuComponent {
     {
       imgSrc: "./assets/flags/globe.png",
       title: "Rest of World",
-      anchor: "#",
       active: false
     },
     {
@@ -29,31 +28,26 @@ export class MenuComponent {
     {
       imgSrc: "./assets/flags/denmark.svg",
       title: "Danmark",
-      anchor: "#",
       active: true
     },
     {
       imgSrc: "./assets/flags/german.svg",
       title: "Deutshland",
-      anchor: "#",
       active: false
     },
     {
       imgSrc: "./assets/flags/norway.svg",
       title: "Norge",
-      anchor: "#",
       active: false
     },
     {
       imgSrc: "./assets/flags/finland.svg",
       title: "Suomi",
-      anchor: "#",
       active: false
     },
     {
       imgSrc: "./assets/flags/sweden.svg",
       title: "Sverige",
-      anchor: "#",
       active: false
     },
   ];
